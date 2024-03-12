@@ -46,7 +46,7 @@ fn parse_backslash(a: String) -> String {
             } else if original_text_vec[i + 1] == 'v' {
                 new_message.push('\x0b');
             }
-            // TODO: Support gor \0NNN and \xHH
+            // TODO: Support for \0NNN and \xHH
         }
     }
     return new_message;
